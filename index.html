@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="موقع عبدالرحيم في الأمن السيبراني والبرمجة">
+  <title>عبدالرحيم | Elliott Alderson H</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+
+  <header class="topbar" id="top">
+    <a class="brand mono" href="#top">&lt;<span>Abdulrahim</span>/&gt;</a>
+    <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="menu">
+      <a href="#about">من أنا</a>
+      <a href="#sections">الأقسام</a>
+      <a href="#roadmap">المسار</a>
+      <a href="#skills">المهارات</a>
+      <a href="#tools">الأدوات</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="kicker mono">// Cybersecurity &amp; Programming</p>
+      <h1 class="glitch" data-text="عبدالرحيم">عبدالرحيم</h1>
+      <p class="handle mono" id="handle">@Elliott_Alderson_H</p>
+      <p class="lead">طالب في البرمجة والأمن السيبراني، أبني وأتعلم وأشارك المعرفة في مجال الحماية والاختراق الأخلاقي.</p>
+
+      <div class="term" role="img" aria-label="محاكاة شاشة طرفية">
+        <div class="term-bar"><i></i><i></i><i></i><span class="mono">bash — abdulrahim</span></div>
+        <div class="term-body mono"><span id="typed"></span><span class="cursor"></span></div>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-tg" href="https://t.me/Abdeerhim_Haker_B" target="_blank" rel="noopener noreferrer">قناتي على تلجرام</a>
+        <a class="btn btn-sun" href="#sections">استكشف الأقسام</a>
+        <button class="btn btn-mint" id="copyHandle" type="button">نسخ المعرّف</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b data-count="8">0</b><span>أقسام</span></div>
+        <div class="stat"><b data-count="6">0</b><span>مراحل تعلم</span></div>
+        <div class="stat"><b data-count="12">0</b><span>أداة ومنهج</span></div>
+        <div class="stat"><b data-count="100">0</b><span>% شغف</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="container reveal">
+      <h2 class="sec-title">من أنا</h2>
+      <div class="card wide">
+        <p>أنا <b>@Elliott_Alderson_H</b>، أعمل على تطوير مهاراتي في البرمجة وأمن المعلومات. أؤمن بأن فهم أساليب المهاجمين هو أفضل طريق لبناء أنظمة آمنة، وأن كل ذلك يجب أن يتم ضمن الإطار القانوني وبإذن واضح.</p>
+      </div>
+    </section>
+
+    <section id="sections" class="container reveal">
+      <h2 class="sec-title">الأقسام</h2>
+      <div class="filters" role="tablist" aria-label="تصفية الأقسام">
+        <button class="chip active" data-filter="all" type="button">الكل</button>
+        <button class="chip" data-filter="offense" type="button">هجومي أخلاقي</button>
+        <button class="chip" data-filter="defense" type="button">دفاعي</button>
+        <button class="chip" data-filter="dev" type="button">تطوير</button>
+      </div>
+      <div class="grid" id="cards">
+        <article class="card" data-cat="offense"><div class="ic">🛡️</div><h3>الاختراق الأخلاقي</h3><p>منهجية اختبار الاختراق: الاستطلاع، التقييم، الاستغلال المصرّح به، والتقرير.</p><span class="tag mono">pentest</span></article>
+        <article class="card" data-cat="defense"><div class="ic">🌐</div><h3>أمن الشبكات</h3><p>البروتوكولات، الجدران النارية، تقسيم الشبكات، وكشف التسلل.</p><span class="tag mono">network</span></article>
+        <article class="card" data-cat="offense"><div class="ic">🕸️</div><h3>أمن تطبيقات الويب</h3><p>ثغرات OWASP Top 10 مثل الحقن وكسر التحكم بالوصول وطرق معالجتها.</p><span class="tag mono">owasp</span></article>
+        <article class="card" data-cat="defense"><div class="ic">🔐</div><h3>التشفير</h3><p>التجزئة والتشفير المتماثل وغير المتماثل والتوقيع الرقمي.</p><span class="tag mono">crypto</span></article>
+        <article class="card" data-cat="offense"><div class="ic">🚩</div><h3>مسابقات CTF</h3><p>تحديات قانونية في الويب والتشفير والهندسة العكسية والتحقيق الرقمي.</p><span class="tag mono">ctf</span></article>
+        <article class="card" data-cat="defense"><div class="ic">🔎</div><h3>الاستخبارات المفتوحة OSINT</h3><p>جمع المعلومات من مصادر عامة بمنهجية واحترام للخصوصية.</p><span class="tag mono">osint</span></article>
+        <article class="card" data-cat="defense"><div class="ic">🧪</div><h3>المختبرات</h3><p>بيئات افتراضية معزولة لتجربة الأدوات بأمان على أجهزتك الخاصة.</p><span class="tag mono">lab</span></article>
+        <article class="card" data-cat="dev"><div class="ic">💻</div><h3>البرمجة</h3><p>Python وJavaScript وBash لأتمتة المهام وبناء أدوات الأمن.</p><span class="tag mono">code</span></article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="container reveal">
+      <h2 class="sec-title">مسار التعلم</h2>
+      <ol class="timeline">
+        <li><b>1. أساسيات الحاسب</b><p>أنظمة التشغيل، لينكس، وسطر الأوامر.</p></li>
+        <li><b>2. الشبكات</b><p>TCP/IP وDNS وHTTP وكيف تتنقل البيانات.</p></li>
+        <li><b>3. البرمجة</b><p>Python للأتمتة وJavaScript لفهم الويب.</p></li>
+        <li><b>4. أمن الويب</b><p>OWASP وتدريب عملي في منصات قانونية.</p></li>
+        <li><b>5. التشفير والتحليل</b><p>أساسيات التشفير وتحليل السجلات والحزم.</p></li>
+        <li><b>6. المشاركة والتوثيق</b><p>CTF وكتابة التقارير ومشاركة المعرفة.</p></li>
+      </ol>
+    </section>
+
+    <section id="skills" class="container reveal">
+      <h2 class="sec-title">المهارات</h2>
+      <div class="card wide">
+        <div class="skill"><div class="skill-h"><span>البرمجة</span><span class="mono">85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+        <div class="skill"><div class="skill-h"><span>الأمن السيبراني</span><span class="mono">78%</span></div><div class="track"><div class="fill" data-w="78"></div></div></div>
+        <div class="skill"><div class="skill-h"><span>الشبكات</span><span class="mono">70%</span></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+        <div class="skill"><div class="skill-h"><span>التشفير</span><span class="mono">62%</span></div><div class="track"><div class="fill" data-w="62"></div></div></div>
+      </div>
+    </section>
+
+    <section id="tools" class="container reveal">
+      <h2 class="sec-title">أدوات للتعلم</h2>
+      <div class="grid">
+        <div class="card"><h3 class="mono">Wireshark</h3><p>تحليل حركة الشبكة والحزم.</p></div>
+        <div class="card"><h3 class="mono">Nmap</h3><p>فحص الأجهزة والمنافذ في شبكتك المصرّح بها.</p></div>
+        <div class="card"><h3 class="mono">Burp Suite</h3><p>اختبار تطبيقات الويب في بيئة مرخّصة.</p></div>
+        <div class="card"><h3 class="mono">CyberChef</h3><p>تحويل الترميز والتشفير وتحليل البيانات.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="container reveal">
+      <div class="cta">
+        <h2>انضم لقناتي على تلجرام</h2>
+        <p>محتوى عن البرمجة والأمن السيبراني.</p>
+        <a class="btn btn-tg" href="https://t.me/Abdeerhim_Haker_B" target="_blank" rel="noopener noreferrer">t.me/Abdeerhim_Haker_B</a>
+        <p class="mono small">Telegram: @Elliott_Alderson_H</p>
+        <p class="notice">تنبيه: لا تختبر إلا الأنظمة التي تملكها أو لديك إذن كتابي بفحصها.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">© <span id="year">2026</span> عبدالرحيم — جميع الحقوق محفوظة</footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="العودة للأعلى">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
